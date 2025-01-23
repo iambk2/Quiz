@@ -23,7 +23,7 @@ function App() {
   },[timer, showScore])
 
   const handleAnswerClick=(selectedOption)=>{
-    if(selectedOption === questionData[currentQuestion].correctOption){
+    if(selectedOption === questionData[currentQuestion].answer){
        setScore((prevScore) => prevScore +1);
     }
     if(currentQuestion < questionData.length - 1) {
